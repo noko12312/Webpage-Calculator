@@ -1,0 +1,92 @@
+*{
+    box-sizing:             border-box;
+    font-family:            monospace, sans-serif;
+}
+
+body {
+    padding-top:            30px;
+    padding-bottom:         30px;
+    background-color:       whitesmoke;
+}
+
+.calculator {
+    display:                grid;
+    justify-content:        center;
+    align-content:          center;
+    grid-template-columns:  repeat(4, 45px);
+    grid-template-rows:     repeat(7, 45px);
+    min-height:             375px;
+    max-width:              210px;
+    margin:                 0 auto;
+    border:                 2px solid black;
+    background:             radial-gradient(circle at 100%,rgb(161, 192, 228),rgb(36, 59, 85));
+    border-radius:          2em;
+    gap:                    0.4em;
+    
+    
+    
+}
+
+.calculator > button {
+    cursor:                 pointer;
+    font-size:              1.25em;
+    border:                 1px solid black;
+    border-radius:          2em;
+    outline:                none;
+    
+    
+}
+
+.calculator > button:hover {
+    background:             radial-gradient(closest-side,rgb(255, 254, 254),rgb(33, 115, 236));
+    font-size:              1.4em;
+    font-weight:            600;
+    
+    
+}
+
+
+.number {
+    background:             radial-gradient(circle at 100%,whitesmoke,rgb(100, 100, 100));
+}
+
+.operator {
+    background:             radial-gradient(circle at 100%,rgb(250, 200, 167),rgb(165, 111, 49));
+}
+
+.clear {
+    background:             radial-gradient(circle at 100%,rgb(243, 176, 176),rgb(150, 44, 44)); 
+}
+
+.equal {
+    background:             radial-gradient(circle at 100%,rgb(176, 243, 176),rgb(44, 150, 62)); 
+}
+
+.memory {
+    background:             radial-gradient(circle at 100%,rgb(194, 176, 243),rgb(99, 44, 150)); 
+}
+
+
+#display {
+    grid-column:            1 / -1;
+    margin-bottom:          2em;
+    
+    height:                 45px;
+    background:             radial-gradient(ellipse,rgb(255, 255, 255),rgb(216, 216, 216));
+    border:                 1px solid black;
+    border-radius:          2em;
+    font-size:              1.75em;
+    text-align:             right;
+    padding-right:          15px;
+    
+    
+}
+
+h1 {
+    grid-column:            1 / -1;
+    text-align:             center;
+    color:                  rgb(216, 216, 216);
+    font-size:              2em; 
+    font-style:             oblique;
+    margin-top:             5px;
+}
